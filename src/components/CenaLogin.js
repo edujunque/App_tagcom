@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { View, Image, Text, StyleSheet, TouchableHighlight, Button, TextInput, ScrollView, StatusBar } from 'react-native';
+import { View, ImageBackground, Image, Text, StyleSheet, TouchableHighlight, Button, TextInput, ScrollView, StatusBar } from 'react-native';
 import { navigate } from 'react-navigation';
 // import LoginFacebook from './CenaLoginFacebook'
 // import CriarConta from './CenaCriarConta'
 // import {firebaseRef, auth} from '../FirebaseConfig'
 
-// const imgLogo = require('../imgs/logo.png');
-// const imgBackground = require('../imgs/bg.jpg');
+const imgLogo = require('../imgs/logo.png');
+const imgBackground = require('../imgs/bg.png');
 
 export default class CenaLogin extends Component {
   static navigationOptions =
@@ -23,11 +23,13 @@ export default class CenaLogin extends Component {
     return (
       // <ScrollView style={{flex:1}}>
 
-      <View style={styles.container}>
+      // <View style={styles.container}>
+        <ImageBackground source={imgBackground} style={{width: '100%', height: '100%'}}>
+
         <StatusBar backgroundColor="#323232"/>
 
         <View style={styles.viewLogo}>
-          <Image source={require('../imgs/logoTagcom.png')}/>
+          <Image source={imgLogo}/>
         </View>
 
         <View style={styles.viewForm}>
@@ -62,7 +64,8 @@ export default class CenaLogin extends Component {
             <Text style={{marginTop:20, color:'#aaaaaa', fontSize:12}}>ESQUECEU A SENHA?</Text>
           </View>
         </View>
-      </View>
+        </ImageBackground>
+      // </View>
       // </ScrollView>
     );
   }
