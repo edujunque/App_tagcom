@@ -21,61 +21,63 @@ export default class CenaLogin extends Component {
 
  render() {
     return (
-      // <ScrollView style={{flex:1}}>
+      <ImageBackground source={imgBackground} style={{width: '100%', height: '100%'}}>
+          <ScrollView     contentContainerStyle={{
+                flexGrow: 1,
+                justifyContent: 'space-between'
+            }}>
 
-      // <View style={styles.container}>
-        <ImageBackground source={imgBackground} style={{width: '100%', height: '100%'}}>
-
-        <StatusBar backgroundColor="#323232"/>
-
-        <View style={styles.viewLogo}>
-          <Image source={imgLogo}/>
-        </View>
-
-        <View style={styles.viewForm}>
-          <View style={{flex:2, justifyContent:'center'}}>
-            <Text style={{color:'#aaaaaa', fontSize:10}}>USUARIO</Text>
-            <TextInput
-                style={styles.formText}
-                underlineColorAndroid='#fff'
-                // placeholder="Usuario"
-                // placeholderTextColor='white'
-                // onChangeText={(name) => this.setState({name})}
-                // value={this.state.name}
-            />
-            <Text style={{marginTop:5, color:'#aaaaaa', fontSize:10}}>SENHA</Text>
-            <TextInput
-                style={styles.formText}
-                underlineColorAndroid='#fff'
-                // placeholder="Senha"
-                // placeholderTextColor='white'
-                // onChangeText={(name) => this.setState({name})}
-                // value={this.state.name}
-            />
-          </View>
-          <View style={{flex:1, alignItems:'center', paddingBottom:30}}>
-            <TouchableHighlight style={styles.btnLogin}
-                onPress={() => { this.props.navigation.navigate('Home') }}
-                underlayColor={'#ed5747'}
-                activeOpacity={0.5}
-                >
-                <Text style={styles.txtLogin}>LOGIN</Text>
-            </TouchableHighlight>
-            <Text style={{marginTop:20, color:'#aaaaaa', fontSize:12}}>ESQUECEU A SENHA?</Text>
-          </View>
-        </View>
-        </ImageBackground>
-      // </View>
-      // </ScrollView>
+              <View style={{flex:1}}>
+                <View style={{flex:2, justifyContent:'center', alignItems:'center'}}>
+                  <Image source={imgLogo}/>
+                </View>
+                <View style={{flex:2, marginLeft:25, marginRight:25, backgroundColor: 'rgba(80, 80, 80, 0.4)',borderRadius: 40 }}>
+                  <View style={{ flex:1, marginLeft:25, marginRight:25, justifyContent:'center'}}>
+                      <Text style={{color:'#aaaaaa', fontSize:10}}>USUARIO</Text>
+                      <TextInput
+                          style={styles.formText}
+                          underlineColorAndroid='#fff'
+                          // placeholder="Usuario"
+                          // placeholderTextColor='white'
+                          // onChangeText={(name) => this.setState({name})}
+                          // value={this.state.name}
+                      />
+                      <Text style={{marginTop:5, color:'#aaaaaa', fontSize:10}}>SENHA</Text>
+                      <TextInput
+                          style={styles.formText}
+                          underlineColorAndroid='#fff'
+                          // placeholder="Senha"
+                          // placeholderTextColor='white'
+                          // onChangeText={(name) => this.setState({name})}
+                          // value={this.state.name}
+                      />
+                  </View>
+                  <View style={{ flex:1, marginLeft:25, marginRight:25, justifyContent:'center', alignItems:'center'}}>
+                      <TouchableHighlight style={styles.btnLogin}
+                          onPress={() => { this.props.navigation.navigate('Home') }}
+                          underlayColor={'#ed5747'}
+                          activeOpacity={0.5}
+                          >
+                          <Text style={styles.txtLogin}>LOGIN</Text>
+                      </TouchableHighlight>
+                      <Text style={{marginTop:20, color:'#aaaaaa', fontSize:12}}>ESQUECEU A SENHA?</Text>
+                  </View>
+                </View>
+                <View style={{ flex:1.1}}></View>
+              </View>
+          </ScrollView>
+      </ImageBackground>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#323232',
+    // backgroundColor: '#323232',
     flex: 1,
-    // justifyContent:'center'
+    // justifyContent:'center',
+    flexDirection:'column',
+    // alignItems:'center'
   },
   viewLogo: {
     alignItems:'center',
@@ -110,8 +112,8 @@ const styles = StyleSheet.create({
   },
   formText: {
     color: 'white',
-    height: 45,
-    width: 250,
+    // height: 45,
+    // width: 250,
     paddingLeft: 10,
   }
 });
