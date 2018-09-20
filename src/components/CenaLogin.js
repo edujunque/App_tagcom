@@ -55,7 +55,7 @@ export default class CenaLogin extends Component {
           </View>
           <View style={{flex:1, alignItems:'center', paddingBottom:30}}>
             <TouchableHighlight style={styles.btnLogin}
-                onPress={() => { this.props.navigation.navigate('Feed') }}
+                onPress={() => { this.props.navigation.navigate('Home') }}
                 underlayColor={'#ed5747'}
                 activeOpacity={0.5}
                 >
