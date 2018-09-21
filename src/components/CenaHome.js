@@ -50,6 +50,25 @@ export default class CenaFeed extends Component {
           <View style={styles.testeDireita}>
             <Image source={require('../imgs/ico_envelope.png')}/>
           </View>
+          <View style={styles.reuniao}>
+
+          </View>
+          <View style={[styles.blocosMenores, styles.tremeTerra]}>
+
+          </View>
+          <View style={[styles.blocosMenores ,styles.cafe]}>
+
+          </View>
+
+          <View style={[styles.classificados, styles.blocosMenores]}>
+
+          </View>
+          <View style={[styles.avisos, styles.blocosMenores]}>
+
+          </View>
+          <View style={[styles.logo]}>
+
+          </View>
 
 </ImageBackground>
       </View>
@@ -95,5 +114,52 @@ Perfil: {
   flexDirection:'column',
   // backgroundColor: 'pink',
   justifyContent: 'center'
+},
+blocosMenores: {
+  flex:1,
+  borderRadius: 20,
+  margin: 5,
+  marginRight: 10,
+  marginLeft: 10,
+},
+tremeTerra: {
+  flexDirection:'column',
+  backgroundColor: 'pink',
+  justifyContent: 'center',
+},
+cafe: {
+  flexDirection:'column',
+  backgroundColor: 'blue',
+  justifyContent: 'center',
+},
+reuniao: {
+  flexDirection:'column',
+  backgroundColor: 'green',
+  justifyContent: 'center',
+  flex: 2,
+  borderRadius: 20,
+  margin: 5,
+  marginRight: 10,
+  marginLeft: 10,
+},
+classificados: {
+  flexDirection:'column',
+  backgroundColor: 'gray',
+  justifyContent: 'center',
+},
+avisos: {
+  flexDirection:'column',
+  backgroundColor: 'red',
+  justifyContent: 'center',
+},
+logo: {
+  flexDirection:'column',
+  backgroundColor: 'yellow',
+  justifyContent: 'center',
+  borderRadius: 20,
+  margin: 5,
+  marginRight: 10,
+  marginLeft: 10,
+  flex: 0.5
 }
 });
