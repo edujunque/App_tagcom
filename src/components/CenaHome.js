@@ -48,7 +48,7 @@ export default class CenaFeed extends Component {
             </View>
           </View>
           <View style={styles.testeDireita}>
-            <Image source={require('../imgs/ico_voltar.png')}/>
+            <Image source={require('../imgs/ico_envelope.png')}/>
           </View>
 
 </ImageBackground>
@@ -80,7 +80,8 @@ testeDireita: {
   flex: 1,
   // backgroundColor: 'blue',
   // alignItems:'flex-end',
-  paddingTop: 10,
+  paddingTop: 20,
+  paddingRight: 20,
   right: 0,
   position: 'absolute'
 },
