@@ -16,6 +16,7 @@
     "react-native-router-flux": "^4.0.1",
     "react-native-svg": "^7.0.2",
     "react-native-svg-from-uri": "^1.0.2",
+    "react-native-switch-toggle": "^1.0.6",
     "react-navigation": "^2.14.2"
   },
   "devDependencies": {

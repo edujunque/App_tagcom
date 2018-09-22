@@ -137,6 +137,9 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-photo-view')
+    compile project(':react-native-linear-gradient')
+    compile project(':react-native-vector-icons')
     compile project(':react-native-svg')
     compile project(':lottie-react-native')
     implementation fileTree(dir: "libs", include: ["*.jar"])

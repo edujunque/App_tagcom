@@ -31,7 +31,7 @@ export default class CenaLogin extends Component {
                 <View style={{flex:2, justifyContent:'center', alignItems:'center'}}>
                   <Image source={imgLogo}/>
                 </View>
-                <View style={{flex:2, marginLeft:25, marginRight:25, backgroundColor: 'rgba(80, 80, 80, 0.4)',borderRadius: 40 }}>
+                <View style={{flex:2, marginLeft:25, marginRight:25, backgroundColor: 'rgba(133, 133, 133, 0.4)',borderRadius: 20 }}>
                   <View style={{ flex:1, marginLeft:25, marginRight:25, justifyContent:'center'}}>
                       <Text style={{color:'#aaaaaa', fontSize:10}}>USUARIO</Text>
                       <TextInput
